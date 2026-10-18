@@ -7,18 +7,29 @@
 | 插件 | ID | 版本 | 说明 | 状态 |
 |---|---|---|---|---|
 | [多引擎批量搜索](./multi-search) | `multi-search` | 2.0.0 | 输入一次关键词，同时打开多个搜索引擎的结果页；引擎按分类管理，勾选即批量搜索 | 已提交 PR，审核中 |
+| [闪启 FlashLaunch](./flashlaunch) | `flashlaunch` | 1.0.0 | 轻量快捷启动：集中管理应用、文件、文件夹和网址，支持别名直达 ZTools 搜索框 | 待提交 |
 
 ## 目录结构
 
 ```text
 my-ztools-plugins/
-└── multi-search/          单个插件的完整项目
+├── multi-search/          多引擎批量搜索
+│   ├── plugin.json        ZTools 插件配置
+│   ├── index.html         插件主界面
+│   ├── preload.js         preload 脚本
+│   ├── default-config.json 默认引擎配置
+│   ├── logo.png           图标
+│   ├── vue.global.js      Vue 运行时
+│   ├── CHANGELOG.md       变更日志
+│   └── README.md          插件说明
+└── flashlaunch/           闪启 FlashLaunch
     ├── plugin.json        ZTools 插件配置
     ├── index.html         插件主界面
-    ├── preload.js         preload 脚本
-    ├── default-config.json 默认引擎配置
-    ├── logo.png           图标
-    ├── vue.global.js      Vue 运行时
+    ├── preload.js         Node 能力与启动层
+    ├── assets/            界面、样式、预览 Mock
+    ├── utils/args.js      启动参数解析
+    ├── tools/             打包、测试、图标脚本
+    ├── docs/              截图
     ├── CHANGELOG.md       变更日志
     └── README.md          插件说明
 ```
