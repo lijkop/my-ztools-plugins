@@ -13,6 +13,7 @@ Copy-Item (Join-Path $root "index.html") $stage
 Copy-Item (Join-Path $root "preload.js") $stage
 Copy-Item (Join-Path $root "logo.png") $stage
 Copy-Item (Join-Path $root "README.md") $stage
+Copy-Item (Join-Path $root "CHANGELOG.md") $stage
 Copy-Item (Join-Path $root "assets\app.js") (Join-Path $stage "assets")
 Copy-Item (Join-Path $root "assets\styles.css") (Join-Path $stage "assets")
 Copy-Item (Join-Path $root "assets\dev-mock.js") (Join-Path $stage "assets")
