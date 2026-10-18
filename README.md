@@ -7,7 +7,7 @@
 | 插件 | ID | 版本 | 说明 | 状态 |
 |---|---|---|---|---|
 | [多引擎批量搜索](./multi-search) | `multi-search` | 2.0.0 | 输入一次关键词，同时打开多个搜索引擎的结果页；引擎按分类管理，勾选即批量搜索 | 已提交 PR，审核中 |
-| [闪启 FlashLaunch](./flashlaunch) | `flashlaunch` | 1.0.0 | 轻量快捷启动：集中管理应用、文件、文件夹和网址，支持别名直达 ZTools 搜索框 | 待提交 |
+| [闪启 FlashLaunch](./flashlaunch) | `flashlaunch` | 1.0.0 | 集中管理常用软件、文件、文件夹和网址，支持别名直达、拖拽添加、图标获取与 JSON 备份（Windows） | 已提交 PR，审核中 |
 
 ## 目录结构
 
@@ -26,9 +26,8 @@ my-ztools-plugins/
     ├── plugin.json        ZTools 插件配置
     ├── index.html         插件主界面
     ├── preload.js         Node 能力与启动层
-    ├── assets/            界面、样式、预览 Mock
+    ├── assets/            界面与样式
     ├── utils/args.js      启动参数解析
-    ├── tools/             打包、测试、图标脚本
     ├── docs/              截图
     ├── CHANGELOG.md       变更日志
     └── README.md          插件说明
